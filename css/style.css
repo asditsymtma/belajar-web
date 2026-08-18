@@ -1,3 +1,253 @@
+/* Pengaturan dasar halaman */
 body {
-    background-color: #f5f5f5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* Bagian header */
+header {
+  background-color: #1e293b;
+  color: white;
+  padding: 25px 40px;
+}
+
+/* Judul perusahaan */
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+/* Navigasi */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+  transition: 0.3s;
+}
+
+/* Link navigasi */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Saat mouse diarahkan ke link */
+nav a:hover {
+  color: #cbd5e1;
+}
+
+/* Bagian utama */
+main {
+  padding: 40px;
+}
+
+/* Setiap section */
+section {
+  margin-bottom: 50px;
+  scroll-margin-top: 30px;
+}
+
+/* Judul section */
+section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+/* Paragraf */
+section p {
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* Hero section */
+section:first-child {
+  background-color: #1e293b;
+  color: white;
+  padding: 60px 40px;
+  border-radius: 12px;
+}
+
+/* Judul hero */
+section:first-child h2 {
+  font-size: 42px;
+  margin-top: 0;
+}
+
+/* Paragraf hero */
+section:first-child p {
+  font-size: 18px;
+}
+
+/* Tombol hero */
+section:first-child a {
+  display: inline-block;
+  background-color: white;
+  color: #1e293b;
+  padding: 12px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Efek saat tombol disentuh mouse */
+section:first-child a:hover {
+  background-color: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+/* Container layanan */
+.services {
+  display: flex;
+  gap: 20px;
+}
+
+/* Kartu layanan */
+.service-card {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+/* Judul kartu */
+.service-card h3 {
+  margin-top: 0;
+}
+
+/* Efek hover */
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Bagian kontak */
+section:last-child {
+  background-color: #e2e8f0;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Paragraf kontak */
+section:last-child p {
+  margin: 8px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Container proyek */
+.projects {
+  display: flex;
+  gap: 20px;
+}
+
+/* Kartu proyek */
+.project-card {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+/* Judul proyek */
+.project-card h3 {
+  margin-top: 0;
+}
+
+/* Efek hover */
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 30px;
+}
+
+/* Tentang Kami */
+.about-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-info {
+  flex: 1;
+  background-color: #e2e8f0;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.about-info h3 {
+  margin-top: 0;
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  section:first-child {
+    padding: 40px 25px;
+  }
+
+  section:first-child h2 {
+    font-size: 32px;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
